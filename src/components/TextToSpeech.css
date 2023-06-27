@@ -1,0 +1,37 @@
+.text-to-speech-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.text-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  padding: 10px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.audio-container {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
