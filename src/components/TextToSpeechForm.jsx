@@ -14,6 +14,7 @@ const TextToSpeechForm = () => {
     event.preventDefault();
     try {
       const url = "https://text-to-speech-backend.onrender.com/"; // Replace with your API endpoint
+      // const url = "http://localhost:3000/";
       const options = {
         method: "POST",
         headers: {
@@ -24,7 +25,7 @@ const TextToSpeechForm = () => {
 
       const response = await fetch(url, options);
       const jsonData = await response.json();
-      if (jsonData.success) setAudioUrl(url + "output.mp3");
+      if (jsonData.fileName) setAudioUrl(url + `${jsonData.fileName}.mp3`);
       // setInputText("");
     } catch (error) {
       console.log(error);
